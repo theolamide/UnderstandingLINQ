@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace UnderstandingLINQ
 {
@@ -6,7 +7,11 @@ namespace UnderstandingLINQ
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<Car> myCars = new List<Car>()
+            {
+                new Car() { VIN = "A1", Make = "Toyota", Model = "Camry", Year = 2010, StickerPrice = 25000};
+            }
+
         }
     }
 
